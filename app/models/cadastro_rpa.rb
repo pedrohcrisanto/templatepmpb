@@ -1,0 +1,2 @@
+class CadastroRpa < ApplicationRecord
+end

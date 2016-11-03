@@ -1,0 +1,79 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Fabrica:</strong>
+  <%= @cadastro_rpa.fabrica %>
+</p>
+
+<p>
+  <strong>Modelo:</strong>
+  <%= @cadastro_rpa.modelo %>
+</p>
+
+<p>
+  <strong>Propulsao:</strong>
+  <%= @cadastro_rpa.propulsao %>
+</p>
+
+<p>
+  <strong>Serial:</strong>
+  <%= @cadastro_rpa.serial %>
+</p>
+
+<p>
+  <strong>Descricao material:</strong>
+  <%= @cadastro_rpa.descricao_material %>
+</p>
+
+<p>
+  <strong>Numero certificado requerente:</strong>
+  <%= @cadastro_rpa.numero_certificado_requerente %>
+</p>
+
+<p>
+  <strong>Tipo certificado requerente:</strong>
+  <%= @cadastro_rpa.tipo_certificado_requerente %>
+</p>
+
+<p>
+  <strong>Anexar certificado requerente:</strong>
+  <%= @cadastro_rpa.anexar_certificado_requerente %>
+</p>
+
+<p>
+  <strong>Pais registro rpa:</strong>
+  <%= @cadastro_rpa.pais_registro_rpa %>
+</p>
+
+<p>
+  <strong>Matricula rpa:</strong>
+  <%= @cadastro_rpa.matricula_rpa %>
+</p>
+
+<p>
+  <strong>Anexo copia certificado rpa:</strong>
+  <%= @cadastro_rpa.anexo_copia_certificado_rpa %>
+</p>
+
+<p>
+  <strong>Anexo copia matricula rpa:</strong>
+  <%= @cadastro_rpa.anexo_copia_matricula_rpa %>
+</p>
+
+<p>
+  <strong>Num certificado estacao:</strong>
+  <%= @cadastro_rpa.num_certificado_estacao %>
+</p>
+
+<p>
+  <strong>Tipo certificado estacao:</strong>
+  <%= @cadastro_rpa.tipo_certificado_estacao %>
+</p>
+
+<p>
+  <strong>Anexar licensa estacao:</strong>
+  <%= @cadastro_rpa.anexar_licensa_estacao %>
+</p>
+
+<%= link_to 'Editar', edit_cadastro_rpa_path(@cadastro_rpa) %> |
+<%= link_to 'Voltar', cadastro_rpas_path %>

@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Cadastro Rpas</h1>
+
+<table class="table table-bordered table-hover table-condensed table-responsive">
+  <thead>
+    <tr>
+      <th>Fabrica</th>
+      <th>Modelo</th>
+      <th>Serial</th>
+      <th>Matricula rpa</th>
+      <th>Num certificado estacao</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @cadastro_rpas.each do |cadastro_rpa| %>
+      <tr>
+        <td><%= cadastro_rpa.fabrica %></td>
+        <td><%= cadastro_rpa.modelo %></td>
+        <td><%= cadastro_rpa.serial %></td>
+        <td><%= cadastro_rpa.matricula_rpa %></td>
+        <td><%= cadastro_rpa.num_certificado_estacao %></td>
+        <td><%= link_to 'Mostrar', cadastro_rpa %></td>
+        <td><%= link_to 'Editar', edit_cadastro_rpa_path(cadastro_rpa) %></td>
+        <td><%= link_to 'Excluir', cadastro_rpa, method: :delete, data: { confirm: 'Voce tem certeza?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'Novo Cadastro Rpa', new_cadastro_rpa_path %>

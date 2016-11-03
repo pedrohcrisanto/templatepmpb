@@ -1,0 +1,2 @@
+json.extract! cadastro_rpa, :id, :fabrica, :modelo, :propulsao, :serial, :descricao_material, :numero_certificado_requerente, :tipo_certificado_requerente, :anexar_certificado_requerente, :pais_registro_rpa, :matricula_rpa, :anexo_copia_certificado_rpa, :anexo_copia_matricula_rpa, :num_certificado_estacao, :tipo_certificado_estacao, :anexar_licensa_estacao, :created_at, :updated_at
+json.url cadastro_rpa_url(cadastro_rpa, format: :json)

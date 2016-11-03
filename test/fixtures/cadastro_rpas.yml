@@ -1,0 +1,35 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  fabrica: MyString
+  modelo: MyString
+  propulsao: MyString
+  serial: MyString
+  descricao_material: MyText
+  numero_certificado_requerente: 1
+  tipo_certificado_requerente: 1
+  anexar_certificado_requerente: 
+  pais_registro_rpa: MyString
+  matricula_rpa: MyString
+  anexo_copia_certificado_rpa: 
+  anexo_copia_matricula_rpa: 
+  num_certificado_estacao: 1
+  tipo_certificado_estacao: MyString
+  anexar_licensa_estacao: 
+
+two:
+  fabrica: MyString
+  modelo: MyString
+  propulsao: MyString
+  serial: MyString
+  descricao_material: MyText
+  numero_certificado_requerente: 1
+  tipo_certificado_requerente: 1
+  anexar_certificado_requerente: 
+  pais_registro_rpa: MyString
+  matricula_rpa: MyString
+  anexo_copia_certificado_rpa: 
+  anexo_copia_matricula_rpa: 
+  num_certificado_estacao: 1
+  tipo_certificado_estacao: MyString
+  anexar_licensa_estacao: 

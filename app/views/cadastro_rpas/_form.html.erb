@@ -11,77 +11,79 @@
     </div>
   <% end %>
 
-  <div class="field">
+
+  <div class="form-group form-horizontal">
     <%= f.label :fabrica %>
     <%= f.text_field :fabrica %>
+
   </div>
 
-  <div class="field">
+  <div class="form-group form-horizontal">
     <%= f.label :modelo %>
     <%= f.text_field :modelo %>
   </div>
 
-  <div class="field">
+  <div class="form-group form-horizontal">
     <%= f.label :propulsao %>
     <%= f.text_field :propulsao %>
   </div>
 
-  <div class="field">
+  <div class="form-group form-horizontal">
     <%= f.label :serial %>
     <%= f.text_field :serial %>
   </div>
 
-  <div class="field">
-    <%= f.label :descricao_material %>
+  <div class="form-group form-horizontal">
+    <%= f.label :descricao_Material %>
     <%= f.text_area :descricao_material %>
   </div>
 
-  <div class="field">
+  <div class="form-group form-horizontal">
     <%= f.label :numero_certificado_requerente %>
     <%= f.number_field :numero_certificado_requerente %>
   </div>
 
-  <div class="field">
+  <div class="form-group form-horizontal">
     <%= f.label :tipo_certificado_requerente %>
     <%= f.number_field :tipo_certificado_requerente %>
   </div>
 
-  <div class="field">
+  <div class="form-group form-horizontal">
     <%= f.label :anexar_certificado_requerente %>
     <%= f.text_field :anexar_certificado_requerente %>
   </div>
 
-  <div class="field">
+  <div class="form-group form-horizontal">
     <%= f.label :pais_registro_rpa %>
     <%= f.text_field :pais_registro_rpa %>
   </div>
 
-  <div class="field">
+  <div class="form-group form-horizontal">
     <%= f.label :matricula_rpa %>
     <%= f.text_field :matricula_rpa %>
   </div>
 
-  <div class="field">
+  <div class="form-group form-horizontal">
     <%= f.label :anexo_copia_certificado_rpa %>
     <%= f.text_field :anexo_copia_certificado_rpa %>
   </div>
 
-  <div class="field">
+  <div class="form-group form-horizontal">
     <%= f.label :anexo_copia_matricula_rpa %>
     <%= f.text_field :anexo_copia_matricula_rpa %>
   </div>
 
-  <div class="field">
+  <div class="form-group form-horizontal">
     <%= f.label :num_certificado_estacao %>
     <%= f.number_field :num_certificado_estacao %>
   </div>
 
-  <div class="field">
+  <div class="form-group form-horizontal">
     <%= f.label :tipo_certificado_estacao %>
     <%= f.text_field :tipo_certificado_estacao %>
   </div>
 
-  <div class="field">
+  <div class="form-group form-horizontal">
     <%= f.label :anexar_licensa_estacao %>
     <%= f.text_field :anexar_licensa_estacao %>
   </div>
@@ -89,4 +91,5 @@
   <div class="actions">
     <%= f.submit %>
   </div>
+
 <% end %>

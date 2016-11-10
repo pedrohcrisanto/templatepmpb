@@ -1,0 +1,2 @@
+class CadastroEquipeRpa < ApplicationRecord
+end

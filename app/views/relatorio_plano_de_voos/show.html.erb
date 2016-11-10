@@ -1,0 +1,40 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Condições relevantes:</strong>
+  <br>
+  <%= @relatorio_plano_de_voo.condições_relevantes %>
+</p>
+
+<p>
+  <strong>Discrep obser missao:</strong>
+  <br>
+  <%= @relatorio_plano_de_voo.discrep_obser_missao %>
+</p>
+
+<p>
+  <strong>Discrep anteriores missao:</strong>
+  <br>
+  <%= @relatorio_plano_de_voo.discrep_anteriores_missao %>
+</p>
+
+<p>
+  <strong>Conclusao:</strong>
+  <br>
+  <%= @relatorio_plano_de_voo.conclusao %>
+</p>
+
+<p>
+  <strong>Id pdv:</strong>
+  <br>
+  <%= @relatorio_plano_de_voo.id_pdv %>
+</p>
+
+<p>
+  <strong>Id relatorio voo:</strong>
+  <br>
+  <%= @relatorio_plano_de_voo.id_relatorio_voo %>
+</p>
+
+<%= link_to 'Editar', edit_relatorio_plano_de_voo_path(@relatorio_plano_de_voo) %> |
+<%= link_to 'Voltar', relatorio_plano_de_voos_path %>

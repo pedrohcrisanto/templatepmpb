@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Relatorio Plano De Voos</h1>
+
+<table  class="table table-bordered table-hover table-condensed table-responsive">
+  <thead>
+    <tr>
+      <th>Condições relevantes</th>
+      <th>Discrep obser missao</th>
+      <th>Discrep anteriores missao</th>
+      <th>Conclusao</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @relatorio_plano_de_voos.each do |relatorio_plano_de_voo| %>
+      <tr>
+        <td><%= relatorio_plano_de_voo.condições_relevantes %></td>
+        <td><%= relatorio_plano_de_voo.discrep_obser_missao %></td>
+        <td><%= relatorio_plano_de_voo.discrep_anteriores_missao %></td>
+        <td><%= relatorio_plano_de_voo.conclusao %></td>
+        <td><%= link_to 'Mostrar', relatorio_plano_de_voo %></td>
+        <td><%= link_to 'Editar', edit_relatorio_plano_de_voo_path(relatorio_plano_de_voo) %></td>
+        <td><%= link_to 'Destruir', relatorio_plano_de_voo, method: :delete, data: { confirm: 'Voce tem certeza?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'Novo Relatorio Plano De Voo', new_relatorio_plano_de_voo_path %>

@@ -1,0 +1,31 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  nome: MyString
+  cor: MyString
+  descricao: 
+  id_usuario: 1
+  id_acessorio_intege: MyString
+  serial_num_bateria: 1
+  serial_sigla_bateria: MyString
+  compativel_aeronave_bateria: MyString
+  modelo_bateria: MyString
+  material_bateria: MyString
+  carga_bateria: MyString
+  potencia_bateria: MyString
+  tensao_bateria: MyString
+
+two:
+  nome: MyString
+  cor: MyString
+  descricao: 
+  id_usuario: 1
+  id_acessorio_intege: MyString
+  serial_num_bateria: 1
+  serial_sigla_bateria: MyString
+  compativel_aeronave_bateria: MyString
+  modelo_bateria: MyString
+  material_bateria: MyString
+  carga_bateria: MyString
+  potencia_bateria: MyString
+  tensao_bateria: MyString

@@ -1,0 +1,2 @@
+json.extract! cadastro_equipe_rpa, :id, :nome, :tipo_licenca_certificado, :numero_licenca_certificado, :anexar_copia, :experiencia_pilito_observador, :id_usuario, :id_erpa, :created_at, :updated_at
+json.url cadastro_equipe_rpa_url(cadastro_equipe_rpa, format: :json)

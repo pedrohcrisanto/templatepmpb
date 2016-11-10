@@ -1,0 +1,53 @@
+<%= form_for(relatorio_plano_de_voo) do |f| %>
+  <% if relatorio_plano_de_voo.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(relatorio_plano_de_voo.errors.count, "error") %> prohibited this relatorio_plano_de_voo from being saved:</h2>
+
+      <ul>
+      <% relatorio_plano_de_voo.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="form-group form-horizontal">
+    <label for="">Condições Relevantes:</label>
+    <br>
+        <%= f.text_field :condições_relevantes %>
+  </div>
+
+  <div class="form-group form-horizontal">
+    <label for="">Discrepancias observadas:</label>
+    <br>
+      <%= f.text_field :discrep_obser_missao %>
+  </div>
+
+  <div class="form-group form-horizontal">
+    <label for="">Discrepancia anteriores:</label>
+    <br>
+      <%= f.text_field :discrep_anteriores_missao %>
+  </div>
+
+  <div class="form-group form-horizontal">
+    <label for="">Conclusão:</label>
+    <br>
+      <%= f.text_field :conclusao %>
+  </div>
+
+  <div class="form-group form-horizontal">
+    <label for="">Id_pdv:</label>
+    <br>
+      <%= f.number_field :id_pdv %>
+  </div>
+
+  <div class="form-group form-horizontal">
+    <label for="">Id relatorio Voo:</label>
+    <br>
+      <%= f.number_field :id_relatorio_voo %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

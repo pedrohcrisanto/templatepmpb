@@ -1,0 +1,89 @@
+<%= form_for(acessorios_rpa) do |f| %>
+  <% if acessorios_rpa.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(acessorios_rpa.errors.count, "error") %> prohibited this acessorios_rpa from being saved:</h2>
+
+      <ul>
+      <% acessorios_rpa.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="form-group form-horizontal">
+    <label for="">Nome:</label>
+    <br>
+    <%= f.text_field :nome %>
+  </div>
+
+  <div class="form-group form-horizontal">
+    <label for="">Cor:</label>
+    <br>
+    <%= f.text_field :cor %>
+  </div>
+
+  <div class="form-group form-horizontal">
+    <label for="">Descrição:</label>
+    <br>
+    <%= f.text_field :descricao %>
+  </div>
+
+  <div class="form-group form-horizontal">
+    <label for="">Id_usuario:</label>
+    <br>
+    <%= f.number_field :id_usuario %>
+  </div>
+
+  <div class="form-group form-horizontal">
+    <label for="">Serial Bateria:</label>
+    <br>
+    <%= f.number_field :serial_num_bateria %>
+  </div>
+
+  <div class="form-group form-horizontal">
+    <label for="">Serial Sigla Bateria:</label>
+    <br>
+    <%= f.text_field :serial_sigla_bateria %>
+  </div>
+
+  <div class="form-group form-horizontal">
+    <label for="">Bateria Compativel com:</label>
+    <br>
+    <%= f.text_field :compativel_aeronave_bateria %>
+  </div>
+
+  <div class="form-group form-horizontal">
+    <label for="">Modelo Bateria:</label>
+    <br>
+    <%= f.text_field :modelo_bateria %>
+  </div>
+
+  <div class="form-group form-horizontal">
+    <label for="">Material Bateria:</label>
+    <br>
+    <%= f.text_field :material_bateria %>
+  </div>
+
+  <div class="form-group form-horizontal">
+    <label for="">Carga Bateria:</label>
+    <br>
+    <%= f.text_field :carga_bateria %>
+  </div>
+
+  <div class="form-group form-horizontal">
+    <label for="">Potencia Bateria:</label>
+    <br>
+    <%= f.text_field :potencia_bateria %>
+  </div>
+
+  <div class="form-group form-horizontal">
+    <label for="">Tensão Bateria:</label>
+    <br>
+    <%= f.text_field :tensao_bateria %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

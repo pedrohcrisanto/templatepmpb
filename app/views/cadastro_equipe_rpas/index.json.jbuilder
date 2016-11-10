@@ -1,0 +1,1 @@
+json.array! @cadastro_equipe_rpas, partial: 'cadastro_equipe_rpas/cadastro_equipe_rpa', as: :cadastro_equipe_rpa

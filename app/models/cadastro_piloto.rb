@@ -1,0 +1,2 @@
+class CadastroPiloto < ApplicationRecord
+end

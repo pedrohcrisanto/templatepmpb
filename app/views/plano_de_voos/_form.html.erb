@@ -1,0 +1,131 @@
+<%= form_for(plano_de_voo) do |f| %>
+  <% if plano_de_voo.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(plano_de_voo.errors.count, "error") %> prohibited this plano_de_voo from being saved:</h2>
+
+      <ul>
+      <% plano_de_voo.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="form-group form-inline">
+    <label for="objetivooperacao">Objetivo Operação:</label>
+    <br>
+    <%= f.text_area :objetivo_operacao %>
+  </div>
+
+  <div class="form-group form-inline">
+    <label for="">Codigo Chamada Rpa:</label>
+    <br>
+    <%= f.text_field :codigo_chamdarpa %>
+  </div>
+
+  <div class="form-group form-inline">
+    <label for="">Data do Vôo:</label>
+    <br>
+    <%= f.datetime_select :data_voo %>
+  </div>
+
+  <div class="form-group form-inline">
+    <label for="">Duração do Vôo:</label>
+    <br>
+    <%= f.text_field :duracao_frequencia_voo %>
+  </div>
+
+  <div class="form-group form-inline">
+    <label for="">Regra do Vôo:</label>
+    <br>
+    <%= f.text_area :regra_voo %>
+  </div>
+
+  <div class="form-group form-inline">
+    <label for="">Tipo Operação:</label>
+    <br>
+    <%= f.text_field :tipo_operacao %>
+  </div>
+
+  <div class="form-group form-inline">
+    <label for="">Número da Estação:</label>
+    <br>
+    <%= f.text_field :numero_estacao %>
+  </div>
+
+  <div class="form-group form-inline">
+    <label for="">Localização da Estação:</label>
+    <br>
+    <%= f.text_field :localizao_estacao %>
+  </div>
+
+  <div class="form-group form-inline">
+    <label for="">Procedimento Transferencia:</label>
+    <br>
+    <%= f.text_area :procedimento_transferencia %>
+  </div>
+
+  <div class="form-group form-inline">
+    <label for="">Local de Decolagem:</label>
+    <br>
+    <%= f.text_field :local_decolagem %>
+  </div>
+
+  <div class="form-group form-inline">
+  <label for="">Local do Destino:</label>
+  <br>
+    <%= f.text_field :local_destino %>
+  </div>
+
+  <div class="form-group form-inline">
+    <label for="">Requisitos de Decolagem:</label>
+    <br>
+    <%= f.text_area :requisitos_decolagem %>
+  </div>
+
+  <div class="form-group form-inline">
+  <label for="">Requisitos do Pouso:</label>
+  <br>
+    <%= f.text_area :requisitos_pouso %>
+  </div>
+
+  <div class="form-group form-inline">
+    <label for="">Rota:</label>
+    <br>
+    <%= f.text_area :rota %>
+  </div>
+
+  <div class="form-group form-inline">
+    <label for="">Altura do Vôo:</label>
+    <br>
+    <%= f.number_field :altura_voo %>
+  </div>
+
+  <div class="form-group form-inline">
+  <label for="">Comunicação Ats:</label>
+  <br>
+    <%= f.text_area :comunicacao_ats %>
+  </div>
+
+  <div class="form-group form-inline">
+    <label for="">Encale Pilotagem:</label>
+    <br>
+    <%= f.text_area :enlace_pilotagem %>
+  </div>
+
+  <div class="form-group form-inline">
+    <label for="">Comunicação de Piloto Observador:</label>
+    <br>
+    <%= f.text_area :comunicacao_piloto_observador %>
+  </div>
+
+  <div class="form-group form-inline">
+  <label for="">Id Usuario:</label>
+  <br>
+    <%= f.number_field :id_usuario %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

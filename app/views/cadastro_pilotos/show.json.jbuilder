@@ -1,0 +1,1 @@
+json.partial! "cadastro_pilotos/cadastro_piloto", cadastro_piloto: @cadastro_piloto

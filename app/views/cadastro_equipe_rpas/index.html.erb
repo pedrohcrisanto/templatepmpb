@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Cadastro Equipe Rpas</h1>
+
+<table class="table table-bordered table-hover table-condensed table-responsive">
+  <thead>
+    <tr>
+      <th>Nome</th>
+      <th>Tipo licenca certificado</th>
+      <th>Numero licenca certificado</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @cadastro_equipe_rpas.each do |cadastro_equipe_rpa| %>
+      <tr>
+        <td><%= cadastro_equipe_rpa.nome %></td>
+        <td><%= cadastro_equipe_rpa.tipo_licenca_certificado %></td>
+        <td><%= cadastro_equipe_rpa.numero_licenca_certificado %></td>
+        <td><%= link_to 'Mostrar', cadastro_equipe_rpa %></td>
+        <td><%= link_to 'Editar', edit_cadastro_equipe_rpa_path(cadastro_equipe_rpa) %></td>
+        <td><%= link_to 'Excluir', cadastro_equipe_rpa, method: :delete, data: { confirm: 'Voce tem certeza?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'Novo Cadastro Equipe Rpa', new_cadastro_equipe_rpa_path %>

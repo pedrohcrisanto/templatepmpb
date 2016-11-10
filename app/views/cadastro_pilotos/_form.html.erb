@@ -1,0 +1,53 @@
+<%= form_for(cadastro_piloto) do |f| %>
+  <% if cadastro_piloto.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(cadastro_piloto.errors.count, "error") %> prohibited this cadastro_piloto from being saved:</h2>
+
+      <ul>
+      <% cadastro_piloto.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="form-group form-horizontal">
+    <label for="">Nome:</label>
+    <br>
+    <%= f.text_field :nome %>
+  </div>
+
+  <div class="form-group form-horizontal">
+    <label for="">Tipo licenca certificado:</label>
+    <br>
+    <%= f.text_field :tipo_licenca_certificado %>
+  </div>
+
+  <div class="form-group form-horizontal">
+    <label for="">Anexar Copia:</label>
+    <br>
+    <%= f.text_field :anexar_copia %>
+  </div>
+
+  <div class="form-group form-horizontal">
+    <label for="">Experiencia Piloto Observador:</label>
+    <br>
+    <%= f.text_area :experiencia_piloto_observador %>
+  </div>
+
+  <div class="form-group form-horizontal">
+    <label for="">Id usuario:</label>
+    <br>
+    <%= f.number_field :id_usuario %>
+  </div>
+
+  <div class="form-group form-horizontal">
+    <label for="">Id Rpa:</label>
+    <br>
+    <%= f.number_field :id_erpa %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

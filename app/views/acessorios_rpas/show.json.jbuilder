@@ -1,0 +1,1 @@
+json.partial! "acessorios_rpas/acessorios_rpa", acessorios_rpa: @acessorios_rpa

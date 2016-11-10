@@ -1,0 +1,2 @@
+json.extract! acessorios_rpa, :id, :nome, :cor, :descricao, :id_usuario, :id_acessorio_intege, :serial_num_bateria, :serial_sigla_bateria, :compativel_aeronave_bateria, :modelo_bateria, :material_bateria, :carga_bateria, :potencia_bateria, :tensao_bateria, :created_at, :updated_at
+json.url acessorios_rpa_url(acessorios_rpa, format: :json)

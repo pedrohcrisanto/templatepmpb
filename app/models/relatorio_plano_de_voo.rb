@@ -1,0 +1,2 @@
+class RelatorioPlanoDeVoo < ApplicationRecord
+end

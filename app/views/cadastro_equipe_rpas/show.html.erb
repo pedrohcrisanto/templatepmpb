@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+<table class="table table-bordered table-hover table-condensed table-responsive">
+<thead>
+<tr>
+  <th>Nome:</th>
+  <th>Tipo licenca certificado:</th>
+  <th>Numero licenca certificado:</th>
+  <th>Anexar copia:</th>
+  <th>Experiencia piloto observador:</th>
+  <th>Id usuario:</th>
+  <th>Id Rpa:</th>
+  <th colspan="7"></th>
+</tr>
+</thead>
+  <tbody>
+
+    <tr>
+  <td><%= @cadastro_equipe_rpa.nome %></td>
+  <td><%= @cadastro_equipe_rpa.tipo_licenca_certificado %></td>
+  <td><%= @cadastro_equipe_rpa.numero_licenca_certificado %></td>
+  <td><%= @cadastro_equipe_rpa.anexar_copia %></td>
+  <td><%= @cadastro_equipe_rpa.experiencia_pilito_observador %></td>
+  <td><%= @cadastro_equipe_rpa.id_usuario %></td>
+  <td><%= @cadastro_equipe_rpa.id_erpa %></td>
+</tr>
+</tbody>
+</table>
+<%= link_to 'Editar', edit_cadastro_equipe_rpa_path(@cadastro_equipe_rpa) %> |
+<%= link_to 'Voltar', cadastro_equipe_rpas_path %>

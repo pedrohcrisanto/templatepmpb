@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  nome: MyString
+  tipo_licenca_certificado: MyString
+  numero_licenca_certificado: 1
+  anexar_copia: 
+  experiencia_pilito_observador: MyText
+  id_usuario: 1
+  id_erpa: 1
+
+two:
+  nome: MyString
+  tipo_licenca_certificado: MyString
+  numero_licenca_certificado: 1
+  anexar_copia: 
+  experiencia_pilito_observador: MyText
+  id_usuario: 1
+  id_erpa: 1

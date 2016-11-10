@@ -10,10 +10,61 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161103011128) do
+ActiveRecord::Schema.define(version: 20161110124942) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "acessorio_rpas", force: :cascade do |t|
+    t.string   "nome"
+    t.string   "cor"
+    t.text     "descricao"
+    t.integer  "id_usuario"
+    t.integer  "id_acessorio"
+    t.datetime "created_at",   null: false
+    t.datetime "updated_at",   null: false
+  end
+
+  create_table "acessorios_rpas", force: :cascade do |t|
+    t.string   "nome"
+    t.string   "cor"
+    t.text     "descricao"
+    t.integer  "id_usuario"
+    t.string   "id_acessorio_intege"
+    t.integer  "serial_num_bateria"
+    t.string   "serial_sigla_bateria"
+    t.string   "compativel_aeronave_bateria"
+    t.string   "modelo_bateria"
+    t.string   "material_bateria"
+    t.string   "carga_bateria"
+    t.string   "potencia_bateria"
+    t.string   "tensao_bateria"
+    t.datetime "created_at",                  null: false
+    t.datetime "updated_at",                  null: false
+  end
+
+  create_table "cadastro_equipe_rpas", force: :cascade do |t|
+    t.string   "nome"
+    t.string   "tipo_licenca_certificado"
+    t.integer  "numero_licenca_certificado"
+    t.binary   "anexar_copia"
+    t.text     "experiencia_pilito_observador"
+    t.integer  "id_usuario"
+    t.integer  "id_erpa"
+    t.datetime "created_at",                    null: false
+    t.datetime "updated_at",                    null: false
+  end
+
+  create_table "cadastro_pilotos", force: :cascade do |t|
+    t.string   "nome"
+    t.string   "tipo_licenca_certificado"
+    t.binary   "anexar_copia"
+    t.text     "experiencia_piloto_observador"
+    t.integer  "id_usuario"
+    t.integer  "id_erpa"
+    t.datetime "created_at",                    null: false
+    t.datetime "updated_at",                    null: false
+  end
 
   create_table "cadastro_plano_de_voos", force: :cascade do |t|
     t.text     "objetivos"
@@ -89,6 +140,41 @@ ActiveRecord::Schema.define(version: 20161103011128) do
     t.datetime "updated_at", null: false
     t.index ["unit_id"], name: "index_placements_on_unit_id", using: :btree
     t.index ["user_id"], name: "index_placements_on_user_id", using: :btree
+  end
+
+  create_table "plano_de_voos", force: :cascade do |t|
+    t.text     "objetivo_operacao"
+    t.string   "codigo_chamdarpa"
+    t.datetime "data_voo"
+    t.string   "duracao_frequencia_voo"
+    t.text     "regra_voo"
+    t.string   "tipo_operacao"
+    t.string   "numero_estacao"
+    t.string   "localizao_estacao"
+    t.text     "procedimento_transferencia"
+    t.string   "local_decolagem"
+    t.string   "local_destino"
+    t.text     "requisitos_decolagem"
+    t.text     "requisitos_pouso"
+    t.text     "rota"
+    t.integer  "altura_voo"
+    t.text     "comunicacao_ats"
+    t.text     "enlace_pilotagem"
+    t.text     "comunicacao_piloto_observador"
+    t.integer  "id_usuario"
+    t.datetime "created_at",                    null: false
+    t.datetime "updated_at",                    null: false
+  end
+
+  create_table "relatorio_plano_de_voos", force: :cascade do |t|
+    t.string   "condições_relevantes"
+    t.string   "discrep_obser_missao"
+    t.string   "discrep_anteriores_missao"
+    t.string   "conclusao"
+    t.integer  "id_pdv"
+    t.integer  "id_relatorio_voo"
+    t.datetime "created_at",                null: false
+    t.datetime "updated_at",                null: false
   end
 
   create_table "roles", force: :cascade do |t|

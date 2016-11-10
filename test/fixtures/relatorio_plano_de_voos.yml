@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  condições_relevantes: MyString
+  discrep_obser_missao: MyString
+  discrep_anteriores_missao: MyString
+  conclusao: MyString
+  id_pdv: 1
+  id_relatorio_voo: 1
+
+two:
+  condições_relevantes: MyString
+  discrep_obser_missao: MyString
+  discrep_anteriores_missao: MyString
+  conclusao: MyString
+  id_pdv: 1
+  id_relatorio_voo: 1

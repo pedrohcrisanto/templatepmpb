@@ -1,0 +1,1 @@
+json.partial! "plano_de_voos/plano_de_voo", plano_de_voo: @plano_de_voo

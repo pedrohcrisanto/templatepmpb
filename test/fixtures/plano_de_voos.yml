@@ -1,0 +1,43 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  objetivo_operacao: MyText
+  codigo_chamdarpa: MyString
+  data_voo: 2016-11-03 03:00:33
+  duracao_frequencia_voo: MyString
+  regra_voo: MyText
+  tipo_operacao: MyString
+  numero_estacao: MyString
+  localizao_estacao: MyString
+  procedimento_transferencia: MyText
+  local_decolagem: MyString
+  local_destino: MyString
+  requisitos_decolagem: MyText
+  requisitos_pouso: MyText
+  rota: MyText
+  altura_voo: 1
+  comunicacao_ats: MyText
+  enlace_pilotagem: MyText
+  comunicacao_piloto_observador: MyText
+  id_usuario: 1
+
+two:
+  objetivo_operacao: MyText
+  codigo_chamdarpa: MyString
+  data_voo: 2016-11-03 03:00:33
+  duracao_frequencia_voo: MyString
+  regra_voo: MyText
+  tipo_operacao: MyString
+  numero_estacao: MyString
+  localizao_estacao: MyString
+  procedimento_transferencia: MyText
+  local_decolagem: MyString
+  local_destino: MyString
+  requisitos_decolagem: MyText
+  requisitos_pouso: MyText
+  rota: MyText
+  altura_voo: 1
+  comunicacao_ats: MyText
+  enlace_pilotagem: MyText
+  comunicacao_piloto_observador: MyText
+  id_usuario: 1

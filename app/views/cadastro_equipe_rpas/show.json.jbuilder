@@ -1,0 +1,1 @@
+json.partial! "cadastro_equipe_rpas/cadastro_equipe_rpa", cadastro_equipe_rpa: @cadastro_equipe_rpa

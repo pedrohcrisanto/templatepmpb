@@ -1,0 +1,2 @@
+class PlanoDeVoo < ApplicationRecord
+end

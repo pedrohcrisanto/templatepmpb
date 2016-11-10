@@ -1,0 +1,1 @@
+json.array! @acessorios_rpas, partial: 'acessorios_rpas/acessorios_rpa', as: :acessorios_rpa

@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Cadastro Pilotos</h1>
+
+<table  class="table table-bordered table-hover table-condensed table-responsive">
+  <thead>
+    <tr>
+      <th>Nome</th>
+      <th>Tipo licenca certificado</th>
+      <th>Experiencia piloto observador</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @cadastro_pilotos.each do |cadastro_piloto| %>
+      <tr>
+        <td><%= cadastro_piloto.nome %></td>
+        <td><%= cadastro_piloto.tipo_licenca_certificado %></td>
+        <td><%= cadastro_piloto.experiencia_piloto_observador %></td>
+        <td><%= link_to 'Mostrar', cadastro_piloto %></td>
+        <td><%= link_to 'Editar', edit_cadastro_piloto_path(cadastro_piloto) %></td>
+        <td><%= link_to 'Destruir', cadastro_piloto, method: :delete, data: { confirm: 'Voce tem certeza?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'Novo Cadastro Piloto', new_cadastro_piloto_path %>

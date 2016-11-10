@@ -1,0 +1,2 @@
+class AcessoriosRpa < ApplicationRecord
+end

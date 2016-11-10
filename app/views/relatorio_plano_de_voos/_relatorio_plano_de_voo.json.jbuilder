@@ -1,0 +1,2 @@
+json.extract! relatorio_plano_de_voo, :id, :condições_relevantes, :discrep_obser_missao, :discrep_anteriores_missao, :conclusao, :id_pdv, :id_relatorio_voo, :created_at, :updated_at
+json.url relatorio_plano_de_voo_url(relatorio_plano_de_voo, format: :json)

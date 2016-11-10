@@ -1,0 +1,59 @@
+<%= form_for(cadastro_equipe_rpa) do |f| %>
+  <% if cadastro_equipe_rpa.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(cadastro_equipe_rpa.errors.count, "error") %> prohibited this cadastro_equipe_rpa from being saved:</h2>
+
+      <ul>
+      <% cadastro_equipe_rpa.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="form-group form-horizontal">
+    <label for="">Nome:</label>
+    <br>
+    <%= f.text_field :nome %>
+  </div>
+
+  <div class="form-group form-horizontal">
+    <label for="">Tipo da Licença Certificado:</label>
+    <br>
+    <%= f.text_field :tipo_licenca_certificado %>
+  </div>
+
+  <div class="form-group form-horizontal">
+    <label for="">Numero da Licença Certificado:</label>
+    <br>
+    <%= f.number_field :numero_licenca_certificado %>
+  </div>
+
+  <div class="form-group form-horizontal">
+    <label for="">Anexo da Copia:</label>
+    <br>
+    <%= f.text_field :anexar_copia %>
+  </div>
+
+  <div class="form-group form-horizontal">
+    <label for="">Experiencia do Piloto Observador:</label>
+    <br>
+    <%= f.text_area :experiencia_pilito_observador %>
+  </div>
+
+  <div class="form-group form-horizontal">
+    <label for="">Id Usuario:</label>
+    <br>
+    <%= f.number_field :id_usuario %>
+  </div>
+
+  <div class="form-group form-horizontal">
+    <label for="">Id da Rpa:</label>
+    <br>
+    <%= f.number_field :id_erpa %>
+  </div>
+
+  <div class="form-group form-horizontal">
+    <%= f.submit %>
+  </div>
+<% end %>

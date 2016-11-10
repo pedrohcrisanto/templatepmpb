@@ -1,0 +1,40 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nome:</strong>
+  <br>
+  <%= @cadastro_piloto.nome %>
+</p>
+
+<p>
+  <strong>Tipo licenca certificado:</strong>
+  <br>
+  <%= @cadastro_piloto.tipo_licenca_certificado %>
+</p>
+
+<p>
+  <strong>Anexar copia:</strong>
+  <br>
+  <%= @cadastro_piloto.anexar_copia %>
+</p>
+
+<p>
+  <strong>Experiencia piloto observador:</strong>
+  <br>
+  <%= @cadastro_piloto.experiencia_piloto_observador %>
+</p>
+
+<p>
+  <strong>Id usuario:</strong>
+  <br>
+  <%= @cadastro_piloto.id_usuario %>
+</p>
+
+<p>
+  <strong>Id erpa:</strong>
+  <br>
+  <%= @cadastro_piloto.id_erpa %>
+</p>
+
+<%= link_to 'Editar', edit_cadastro_piloto_path(@cadastro_piloto) %> |
+<%= link_to 'Voltar', cadastro_pilotos_path %>

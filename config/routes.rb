@@ -1,5 +1,11 @@
 Rails.application.routes.draw do
 
+  resources :acessorios_rpas
+  resources :relatorio_plano_de_voos
+  resources :cadastro_pilotos
+  resources :acessorio_rpas
+  resources :cadastro_equipe_rpas
+  resources :plano_de_voos
   resources :cadastro_rpas
   root to: 'static_pages#index'
 
